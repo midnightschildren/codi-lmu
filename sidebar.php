@@ -8,7 +8,7 @@
  */
 ?>
 <div id="sidebar" class="grid_4 omega">
-  <div class="well">
+  <div>
     <?php 
       $useDefaultSidebar = true;
       if ( function_exists('dynamic_sidebar') ) {

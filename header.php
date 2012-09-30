@@ -25,7 +25,7 @@
 <?php wp_head(); ?>
 </head><body <?php body_class(); ?>>
 <div class=" id="options-wrapper"> 
-<div id="" class="container">
+<div id="logline" class="container">
 <div id="header" class="container">
   <h1><a href="<?php echo home_url(); ?>/">
     <?php bloginfo('name'); ?>
