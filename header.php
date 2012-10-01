@@ -24,7 +24,7 @@
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
 </head><body <?php body_class(); ?>>
-<div class=" id="options-wrapper"> 
+<div class="shadow_body" id="options-wrapper"> 
 <div id="logline" class="container">
 <div id="header" class="container">
   <h1><a href="<?php echo home_url(); ?>/">

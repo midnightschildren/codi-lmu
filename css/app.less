@@ -130,6 +130,32 @@
 
 }
 
+
+@font-face {
+    font-family: 'Enriqueta';
+    src: url('../fonts/Enriqueta-Regular-webfont.eot');
+    src: url('../fonts/Enriqueta-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Enriqueta-Regular-webfont.woff') format('woff'),
+         url('../fonts/Enriqueta-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Enriqueta-Regular-webfont.svg#EnriquetaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Enriqueta';
+    src: url('../fonts/Enriqueta-Bold-webfont.eot');
+    src: url('../fonts/Enriqueta-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Enriqueta-Bold-webfont.woff') format('woff'),
+         url('../fonts/Enriqueta-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Enriqueta-Bold-webfont.svg#EnriquetaBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
 /* Variables
  * For more examples see bootstrap/variables.less
 ------------------------------------------------------------------------------*/
@@ -162,7 +188,7 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        "OpenSans", Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -171,7 +197,7 @@
 @baseLineHeight:        18px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    "Enriqueta", Georgia, Times, serif;
 @headingsFontWeight:    bold;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
@@ -324,10 +350,10 @@ body { background: @bodyBackground }
 }
 .post, .type-post, .type-page {
   padding: 20px 20px 10px 20px;
-  margin: 15px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
   background: #FFF;
   border: solid 1px #e3e3e3;
-  .box-shadow(@boxShadowInner);
+  
 }
 .swpf-img img {
   border: 5px solid #fff;
@@ -367,12 +393,13 @@ body { background: @bodyBackground }
 }
 /* Footer */
 #footer {
-  margin: 0px 0px 30px 0px;
-  padding: 30px;
-  #gradient > .vertical(@gradientLightStart, @gradientLightStop);
-  .box-shadow(@boxShadowDefault);
-  text-shadow: #fff 0px 1px 1px;
+  margin: 0px;
+  padding: 0px;
   color: #848484;
+  width: 1060px;
+  margin-right:auto;
+  margin-left:auto;
+  background: url(../shadow_footer.png) 0px 0px repeat-y;
 }
 /* Meta */
 
