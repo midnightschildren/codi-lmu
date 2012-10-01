@@ -27,16 +27,11 @@
 <div class="shadow_body" id="options-wrapper"> 
 <div id="logline" class="container">
 <div id="header" class="container">
+  <a href="http://sftv.lmu.edu/"><div class="LMUSofFilm"></div></a>
   <h1><a href="<?php echo home_url(); ?>/">
-    <?php bloginfo('name'); ?>
+    <div class="Loglines_logo"></div>
     </a></h1>
-  <div class="description">
-    <?php bloginfo('description'); ?>
-  </div>
-</div>
-<div id="navigation" class="container">
-
-  <?php wp_nav_menu(); ?>  <div id="search" class="grid_3">
-    <?php get_search_form(); ?>
+  <div id="navigation" class="grid_7 pull-right">
+    <?php wp_nav_menu(); ?>  
   </div>
 </div>
