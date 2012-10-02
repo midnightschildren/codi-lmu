@@ -34,4 +34,5 @@
   <div id="navigation" class="grid_7 pull-right">
     <?php wp_nav_menu(); ?>  
   </div>
+  <div id="navigationline" class="grid_8 pull-right"></div>
 </div>

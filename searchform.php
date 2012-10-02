@@ -11,8 +11,8 @@
   <div id="searching">
     <table border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td align="center" valign="middle"><input type="text" id="s" name="s" value="" /></td>
-        <td align="center" valign="middle"><input type="submit" value="Search" id="searchsubmit" /></td>
+        <td align="center" valign="middle"><input type="text" id="s" name="s" onfocus="if (this.value=='search') this.value = ''" value="Search" /></td>
+        <td align="center" valign="middle"><input type="submit" value="" id="searchsubmit" /></td>
       </tr>
     </table>
   </div>

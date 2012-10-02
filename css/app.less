@@ -174,10 +174,10 @@
 // Colors
 // -------------------------
 @bodyBackground:        #f3f1f0;
-@textColor:             #333333;
+@textColor:             #000000;
 @secondaryTextColor:    @textColor + #444;
-@lightTextColor:        #ffffff;
-@darkTextColor:         #000000;
+@lightTextColor:        #a9a9a9;
+@darkTextColor:         #777777;
 @codeColor:             @textColor + #033;
 @linkColor:             #0088CC;
 @linkColorHover:        #005580;
@@ -189,6 +189,7 @@
 // Typography
 // -------------------------
 @sansFontFamily:        "OpenSans", Helvetica, Arial, sans-serif;
+@sans2FontFamily:       Verdana, Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -204,7 +205,7 @@
 // Forms
 // -------------------------
 @inputBackground:       #FFF;
-@inputTextColor:        #444;
+@inputTextColor:        #777;
 
 // Misc
 // -------------------------
@@ -279,19 +280,23 @@ body { background: @bodyBackground }
   position: relative;
 }
 #navigation a {
-  font-weight: bolder;
+  font-weight: bold;
   display: block;
-  line-height: 2em;
-  padding: 0 1.2125em;
+  line-height: 30px;
+  font-size: 14px;
+  color: #000;
+  letter-spacing: .01em;
   text-decoration: none;
   .caret {
     margin-top: 10px;
   }
+  margin-left: 1.5em;
+  margin-right: 0em;
+  padding: 0;
+  text-transform: uppercase;
 }
 #navigation ul ul {
-  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+ 
   display: none;
   float: left;
   margin: 0;
@@ -317,10 +322,10 @@ body { background: @bodyBackground }
   width: 168px;
 }
 #navigation li:hover > a, #navigation ul ul :hover > a, #navigation a:focus {
-  background: #efefef;
+  border-bottom: 5px solid #c8c8c8;
 }
 #navigation li:hover > a, #navigation a:focus {
-  #gradient > .vertical(#f9f9f9, #e5e5e5);
+  
   color: #373737;
 }
 #navigation ul li:hover > ul {
@@ -334,9 +339,7 @@ body { background: @bodyBackground }
 }
 /* Sidebar */
 #sidebar {
-  -moz-box-shadow: inset 0 0 5px #fff;
-  -webkit-box-shadow: inset 0 0 5px #fff;
-  box-shadow: inset 0 0 5px #fff;
+
 }
 #pages, #archives, #categories, #feeds, #sidebarmeta, #blogroll {
   margin: 0px 0px 0px 0px;
