@@ -23,18 +23,49 @@
 	background-color: #fff;
 }
 
+/* Typography */
+	
+p {
+	margin: 0px;
+}
+
 /* Footer */
 #footer {
-  margin: 0px;
-  padding: 0px;
-  width: 1060px;
-  height: 130px;
-  margin-right:auto;
-  margin-left:auto;
-  box-shadow: none;
-  text-shadow: none;
-  background: #77787b url(../shadow_box.png) 0px 0px repeat-y;
-  color: #fff;
+  	margin: 0px;
+  	padding: 20px 60px;
+  	width: 940px;
+  	height: 94px;
+  	margin-right:auto;
+  	margin-left:auto;
+  	box-shadow: none;
+  	text-shadow: none;
+  	background: #77787b url(../shadow_box.png) 0px 0px repeat-y;
+  	color: #fff;
+  	font-family: @sans3FontFamily;
+  	font-size: 11px;
+  	line-height: 14px;
+}
+
+#footer .widget_text {
+	margin-left: 0px;
+}
+
+#footer p {
+	font-size: 11px;
+	line-height: 14px;
+	font-family: @sans3FontFamily;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#footer div.black {
+	color: #000;
+}
+
+#footer div.black a {
+	color: #000;
 }
 
 #footer_bottom {
@@ -45,6 +76,59 @@
 	background: url(../background_shadow_bottom.png) 0px 0px;
 	background-repeat:no-repeat;
 	margin-bottom: 120px;
+}
+
+.social_nav {
+	height: 21px;
+	overflow: hidden;
+}
+
+.youtube {
+	width: 49px;
+	height: 21px;
+	margin-left: 40px;
+	margin-right: 45px;
+	overflow: hidden;
+	background: url(../youtube.gif) 0px 0px no-repeat;
+}
+
+.youtube:hover {
+	background: url(../youtube.gif) 0px -21px no-repeat;
+}
+
+.youtube:active {
+	background: url(../youtube.gif) 0px -42px no-repeat;
+}
+
+.facebook {
+	width: 65px;
+	height: 21px;
+	overflow: hidden;
+	background: url(../facebook.gif) 0px 0px no-repeat;
+}
+
+.facebook:hover {
+	background: url(../facebook.gif) 0px -21px no-repeat;
+}
+
+.facebook:active {
+	background: url(../facebook.gif) 0px -42px no-repeat;
+}
+
+.twitter {
+	width: 63px;
+	height: 21px;
+	overflow: hidden;
+	margin-left: 40px;
+	background: url(../twitter.gif) 0px 0px no-repeat;
+}
+
+.twitter:hover {
+	background: url(../twitter.gif) 0px -21px no-repeat;
+}
+
+.twitter:active {
+	background: url(../twitter.gif) 0px -42px no-repeat;
 }
 
 /* Header */
@@ -97,4 +181,8 @@
 
 #searching {
 	padding: 0px;
+}
+
+td.searchbox {
+	line-height: 24px;
 }

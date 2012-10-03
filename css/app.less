@@ -179,8 +179,8 @@
 @lightTextColor:        #a9a9a9;
 @darkTextColor:         #777777;
 @codeColor:             @textColor + #033;
-@linkColor:             #0088CC;
-@linkColorHover:        #005580;
+@linkColor:             @textColor;
+@linkColorHover:        @textColor;
 @gradientLightStart:    #e0e0e0;
 @gradientLightStop:     #c6c6c6;
 @gradientDarkStart:     #252525;
@@ -190,6 +190,7 @@
 // -------------------------
 @sansFontFamily:        "OpenSans", Helvetica, Arial, sans-serif;
 @sans2FontFamily:       Verdana, Helvetica, Arial, sans-serif;
+@sans3FontFamily:       Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -353,10 +354,10 @@ body { background: @bodyBackground }
   width: 40px;
 }
 .post, .type-post, .type-page {
-  padding: 20px 20px 10px 20px;
+  padding: 0px 20px 40px 0px;
   margin: 0px 0px 15px 0px;
   background: #FFF;
-  border: solid 1px #e3e3e3;
+  border: none;
   
 }
 .swpf-img img {

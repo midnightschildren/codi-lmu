@@ -109,7 +109,7 @@ function the_breadcrumb() {
 	if ( function_exists('register_sidebar') )
 	register_sidebar(array(
 		'name' => 'Sidebar',
-		'before_widget' => '<div class="sidebaritem">',
+		'before_widget' => '<div class="sidebaritem %2$s %1$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
@@ -117,7 +117,7 @@ function the_breadcrumb() {
 	if ( function_exists('register_sidebar') )
 	register_sidebar(array(
 		'name' => 'Footer1',
-		'before_widget' => '<div class="grid_3">',
+		'before_widget' => '<div class="grid_3 %2$s %1$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
