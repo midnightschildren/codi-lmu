@@ -83,83 +83,98 @@ p {
 	overflow: hidden;
 }
 
-.youtube {
+#youtube {
 	width: 49px;
 	height: 21px;
 	margin-left: 40px;
 	margin-right: 45px;
 	overflow: hidden;
+	text-indent: 100%;
+	display: block;
+	white-space:nowrap;
 	background: url(../youtube.gif) 0px 0px no-repeat;
 }
 
-.youtube:hover {
+#youtube:hover {
 	background: url(../youtube.gif) 0px -21px no-repeat;
 }
 
-.youtube:active {
+#youtube:active {
 	background: url(../youtube.gif) 0px -42px no-repeat;
 }
 
-.facebook {
+#facebook {
 	width: 65px;
 	height: 21px;
 	overflow: hidden;
+	text-indent: 100%;
+	display: block;
+	white-space:nowrap;
 	background: url(../facebook.gif) 0px 0px no-repeat;
 }
 
-.facebook:hover {
+#facebook:hover {
 	background: url(../facebook.gif) 0px -21px no-repeat;
 }
 
-.facebook:active {
+#facebook:active {
 	background: url(../facebook.gif) 0px -42px no-repeat;
 }
 
-.twitter {
+#twitter {
 	width: 63px;
 	height: 21px;
 	overflow: hidden;
 	margin-left: 40px;
+	text-indent: 100%;
+	display: block;
+	white-space:nowrap;
 	background: url(../twitter.gif) 0px 0px no-repeat;
 }
 
-.twitter:hover {
+#twitter:hover {
 	background: url(../twitter.gif) 0px -21px no-repeat;
 }
 
-.twitter:active {
+#twitter:active {
 	background: url(../twitter.gif) 0px -42px no-repeat;
 }
 
 /* Header */
 
-.Loglines_logo {
+#Loglines_logo {
 	width: 285px;
 	height: 71px;
 	overflow: hidden;
+	text-indent: 100%;
+	display: block;
+	white-space:nowrap;
 	background: url(../LogLines_logo.png) 0px 0px no-repeat;
 }
 
-.Loglines_logo:hover {
+#Loglines_logo:hover {
 	background: url(../LogLines_logo.png) 0px -71px no-repeat;
 }
 
-.Loglines_logo:active {
+#Loglines_logo:active {
 	background: url(../LogLines_logo.png) 0px -142px no-repeat;
 }
 
-.LMUSofFilm {
+#LMUSofFilm {
 	width: 483px;
 	height: 31px;
 	overflow: hidden;
+	text-indent: 100%;
+	display: block;
+	white-space:nowrap;
 	background: url(../SFTV_logo.png) 0px 0px no-repeat;
 }
 
-.LMUSofFilm:hover {
+#LMUSofFilm:hover {
 	background: url(../SFTV_logo.png) 0px -31px no-repeat;
 }
 
-.LMUSofFilm:active {
+#LMUSofFilm:active {
 	background: url(../SFTV_logo.png) 0px -62px no-repeat;
 }
 
@@ -194,8 +209,34 @@ td.searchbox {
 
 .widget_twitter h3 {
 	color: #47c9f0;
+	margin-bottom: -1px;
 }
 
+.widget_twitter ul {
+	margin: 0px;
+	display: table; width: 100%; 
+}
+
+span.entry-content {
+	display: table-row-group;
+	font-family: @sans2FontFamily;
+	font-size: 11px;
+	line-height: 16px;  
+}
+
+span.entry-meta {
+	display: table-header-group;
+}
+
+span.time-meta {
+	display: table-cell;
+	padding-top: 16px;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 18px;
+	letter-spacing: .075em;
+
+}
 .from-meta {
 	display: none;
 }

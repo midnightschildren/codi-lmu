@@ -27,10 +27,8 @@
 <div class="shadow_body" id="options-wrapper"> 
 <div id="logline" class="container">
 <div id="header" class="container">
-  <a href="http://sftv.lmu.edu/"><div class="LMUSofFilm"></div></a>
-  <h1><a href="<?php echo home_url(); ?>/">
-    <div class="Loglines_logo"></div>
-    </a></h1>
+  <a href="http://sftv.lmu.edu/" id="LMUSofFilm">LMU School of Film and Television</a>
+  <h1><a href="<?php echo home_url(); ?>/" id="Loglines_logo">Loglines</a></h1>
   <div id="navigation" class="grid_7 pull-right">
     <?php wp_nav_menu(); ?>  
   </div>
