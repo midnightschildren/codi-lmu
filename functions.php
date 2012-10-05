@@ -139,6 +139,9 @@ function the_breadcrumb() {
 		'after_title' => '</h3>',
 	));
 
+// Add Filter to Widgets for Shortcodes
+
+    add_filter('widget_text', 'do_shortcode');
 
 // Add Custom HTML to Images
 function filter_images($content){
