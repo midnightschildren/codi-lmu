@@ -63,6 +63,11 @@ function registerstyles() {
 	add_theme_support('post-thumbnails');
 	set_post_thumbnail_size(200, 200, true);
 
+// Custom Image Sizes
+// -----------------------------------------------------------------------------
+    // Features
+    add_image_size( "home-feature", 600, 9999);
+
 // ADD POST FORMATS
 	add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio' ) );
 
@@ -81,6 +86,33 @@ function registerstyles() {
     }
     add_action('init', 'removeHeadLinks');
     remove_action('wp_head', 'wp_generator');
+
+// Archive Links
+
+add_shortcode( 'entry-link-published', 'my_entry_published_link' );
+
+function my_entry_published_link() {
+
+    /* Get the year, month, and day of the current post. */
+    $year = get_the_time( 'Y' );
+    $month = get_the_time( 'm' );
+    $day = get_the_time( 'd' );
+    $out = '';
+
+    /* Add a link to the monthly archive. */
+    $out .= '<a href="' . get_month_link( $year, $month ) . '" title="Archive for ' . esc_attr( get_the_time( 'F Y' ) ) . '">' . get_the_time( 'F' ) . '</a>';
+
+    /* Add a link to the daily archive. */
+    $out .= ' <a href="' . get_day_link( $year, $month, $day ) . '" title="Archive for ' . esc_attr( get_the_time( 'F d, Y' ) ) . '">' . $day . '</a>';
+
+    /* Add a link to the yearly archive. */
+    $out .= ', ' . $year . '';
+
+    return $out;
+}
+
+
+
 	
 // Add Bread Crumbs
 function the_breadcrumb() {
