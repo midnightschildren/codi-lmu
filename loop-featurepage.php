@@ -17,7 +17,7 @@
     } 
   ?>
 
-  <div class="grid_8 pull-left borbottom featured-home <?php echo $oddClass ?>">
+  <div class="grid_8 pull-left bortop featured-home <?php echo $oddClass ?>">
         
       <div class="grid_8 alpha featured-posts">
         <div class="grid_6 alpha featured-text pull-left">
@@ -27,8 +27,10 @@
           </h1>
               <?php the_excerpt(); ?> 
           <p class="readmore rmorespacer gray"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
+          <div class="grid_6 alpha featured-text pull-left">
           <?php if( function_exists('ADDTOANY_SHARE_SAVE_KIT') ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
           <p class="lpotb tagsblock"><?php the_tags(); ?></p>
+          </div>
         </div>
         <div class="grid_2">
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('page-feature'); ?></a>
@@ -40,7 +42,7 @@
       
   </div>
   <?php endwhile; ?>
-  
+<?php get_template_part( '/inc/nav' );?>  
 <?php else : ?>
   
 <?php endif; ?> 

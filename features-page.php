@@ -37,7 +37,7 @@
     ?>
 
 
-      <?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+      
     </div>
     
   </div>
