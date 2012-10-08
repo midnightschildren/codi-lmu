@@ -294,11 +294,11 @@ td.searchbox {
 	padding-top: 8px;
 }
 
-#sidebar .widget_rss ul li {
+#sidebar .widget_rss ul li, #sidebar .widget_twitter ul li {
 	padding-bottom: 16px;
 }
 
-.widget_twitter h3 {
+.widget_twitter h3 a {
 	color: #47c9f0;
 	margin-bottom: -1px;
 }
@@ -317,11 +317,18 @@ td.searchbox {
 	display: table; width: 100%; 
 }
 
-span.entry-content, a.rsswidget {
+span.entry-content,  {
 	display: table-row-group;
 	font-family: @sans2FontFamily;
 	font-size: 11px;
 	line-height: 16px;  
+}
+
+.widget_rss ul li a {
+	display: table-cell;
+	font-family: @sans2FontFamily;
+	font-size: 11px;
+	line-height: 16px;
 }
 
 a.rsswidget img {
@@ -330,13 +337,30 @@ a.rsswidget img {
 	margin-bottom: -14px;
 }
 
+.twitimage {
+	float: right;
+}
+
+#twitbut {
+	width: 14px;
+	height: 14px;
+	overflow: hidden;
+	text-indent: 100%;
+	display: block;
+	white-space:nowrap;
+	background: url(../twitter_sq.png) 0px 0px no-repeat;
+}
+
+a.rsswidget:hover {
+	text-decoration: underline;
+}
+
 span.entry-meta, span.rss-date {
 	display: table-header-group;
 }
 
 span.time-meta {
 	display: table-cell;
-	padding-top: 16px;
 	font-weight: bold;
 	font-size: 11px;
 	line-height: 18px;
