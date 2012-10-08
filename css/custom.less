@@ -47,6 +47,15 @@ p {
 	font-family: @sansFontFamily;
 }
 
+.hspacer {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.rmorespacer {
+	padding-bottom: 23px;
+}
+
 .textwidget {
 	padding-bottom: 2px;
 }
@@ -71,6 +80,14 @@ p {
 	color: #ff8025;
 }
 
+.salmon, .salmon a {
+	color: #ff402f;
+}
+
+.gray, .gray a {
+	color: #777;
+}
+
 .readmore, .readmore a {
 	font-size: 11px;
 	line-height: 18px;
@@ -84,13 +101,17 @@ p {
 	padding-bottom: 40px;
 }
 
+.borbottom {
+	border-bottom: 1px dotted #000;
+}
+
 .tagsblock, .tagsblock a {
 	font-family: @sans2FontFamily;
 	font-weight: normal;
 	font-size: 11px;
 	line-height: 15px;
 	color: #a9a9a9;
-	margin-top: 3px;
+	margin-top: 2px;
 }
 
 .single h4 {
@@ -417,6 +438,11 @@ span.rss-date {
 	padding-top: 10px;
 }
 
+.featured-posts {
+	padding-top: 10px;
+	
+}
+
 .featured-text {
 	width: 440px;
 }
@@ -446,11 +472,20 @@ span.rss-date {
 .featured-home {
 	width: 600px;
 	margin-right: 20px;
-	border-bottom: 1px dotted #000;
+	
 }
 
-.borbottom {
+.feature-page {
+	border-top: 10px solid #ffd0ca;
+	margin-right: 20px;
+    width: 600px;
+}
+
+.fpageheader {
+	padding-bottom: 95px;
 	border-bottom: 1px dotted #000;
+	padding-top: 20px;
+    text-transform: capitalize;
 }
 
 /* Add to Any */
@@ -465,7 +500,7 @@ span.rss-date {
 	visibility: hidden;
 }
 
-.addtoany_share_save_container {
+.addtoany_share_save_container, .a2a_kit {
 	float: left;
 	padding-right: 15px;
 

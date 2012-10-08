@@ -67,6 +67,7 @@ function registerstyles() {
 // -----------------------------------------------------------------------------
     // Features
     add_image_size( "home-feature", 600, 9999);
+    add_image_size( "page-feature", 140, 100, true);
 
 // ADD POST FORMATS
 	add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio' ) );
