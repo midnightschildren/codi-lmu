@@ -47,6 +47,10 @@ p {
 	font-family: @sansFontFamily;
 }
 
+.textwidget {
+	padding-bottom: 2px;
+}
+
 .white {
 	color: #fff;
 }
@@ -59,12 +63,21 @@ p {
 	color: #3286cd;
 }
 
+.lblue, .lblue a {
+	color: #47c9f0;
+}
+
+.orange, .orange a {
+	color: #ff8025;
+}
+
 .readmore, .readmore a {
 	font-size: 11px;
 	line-height: 18px;
 	text-transform: uppercase;
 	font-family: @sansFontFamily;
 	font-weight: bold;
+	letter-spacing: .075px;
 }
 
 .single h4 {
@@ -326,9 +339,10 @@ span.entry-content,  {
 
 .widget_rss ul li a {
 	display: table-cell;
-	font-family: @sans2FontFamily;
-	font-size: 11px;
-	line-height: 16px;
+	font-family: @headingsFontFamily;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: normal;
 }
 
 a.rsswidget img {
