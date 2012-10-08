@@ -36,10 +36,7 @@
 
       <?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
     </div>
-    <div class="postmetadata">
-        <?php get_template_part( '/inc/meta' );?>
-
-    </div>
+    
   </div>
 </div>
 <?php endwhile; endif; ?>

@@ -24,7 +24,7 @@ get_header(); ?>
       </div>  
       
         <?php the_content(); ?> 
-        <p class="readmore blue"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
+        <p class="lpotb tagsblock"><?php the_tags(); ?></p>
       
   
 	
