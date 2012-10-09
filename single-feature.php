@@ -24,7 +24,10 @@ get_header(); ?>
       </div>  
       
         <?php the_content(); ?> 
-        <p class="lpotb tagsblock"><?php the_tags(); ?></p>
+        <div class="grid_8 alpha featured-text pull-left">
+          <?php if( function_exists('ADDTOANY_SHARE_SAVE_KIT') ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
+          <p class="lpotb tagsblock"><?php the_tags(); ?></p>
+          </div>
       
   
 	

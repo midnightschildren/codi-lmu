@@ -26,14 +26,23 @@
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
           </h1>
               <?php the_excerpt(); ?> 
-          <p class="readmore peoplespacer gray"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
+          
+
+          <?php // Link More
+          $linkurl = get_custom_field('post_link');
+          if( !empty($linkurl) ) :
+        ?>
+              <p class="readmore peoplespacer gray">
+              <a href="<?php print_custom_field('post_link'); ?>"><?php print_custom_field('post_link_label'); ?></a> ></p>
+              <?php endif; ?>
+
           <div class="grid_6 alpha featured-text pull-left">
           <?php if( function_exists('ADDTOANY_SHARE_SAVE_KIT') ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
           <p class="lpotb tagsblock"><?php the_tags(); ?></p>
           </div>
         </div>
         <div class="grid_2">
-              <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('page-feature'); ?></a>
+              <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('page-people'); ?></a>
         </div>
       </div>  
   
