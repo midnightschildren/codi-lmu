@@ -17,7 +17,7 @@
     } 
   ?>
 
-  <div class="grid_8 pull-left borbottom featured-home <?php echo $oddClass ?>">
+  <div class="grid_8 pull-left featured-home <?php echo $oddClass ?>">
         
       <div class="grid_8 alpha featured-header">
         <div class="grid_6 alpha featured-text pull-right">
@@ -31,7 +31,7 @@
   
   <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('home-feature'); ?></a>
       
-      <div class="grid_6 alpha pull-right featured-text extra20r">
+      <div class="grid_6 alpha pull-right featured-text">
 	      <?php the_excerpt(); ?> 
         <p class="readmore blue lpotb"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
       </div>

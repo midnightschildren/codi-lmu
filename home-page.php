@@ -33,6 +33,25 @@
       $wp_query = $temp_query;
     ?>
 
+<?php // Recent Posts
+      $temp_query = clone $wp_query;
+                
+      $args=array(
+        'post_type' => array( 'people', 'internships', 'festivals', 'videos' ),
+        'post_status' => 'publish',
+        'posts_per_page' => 2,
+        'order' => 'DESC'
+      );
+        
+      $wp_query = null;
+      $wp_query = new WP_Query($args);
+      $LOOP_ROW_COUNT = 1;
+      get_template_part( 'loop', 'homepage' );
+      
+      // now back to our regularly scheduled programming
+      $wp_query = $temp_query;
+    ?>
+
 
       <?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
     </div>

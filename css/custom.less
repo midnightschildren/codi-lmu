@@ -31,7 +31,16 @@
 
 .swpf-img img {
 	border: 0;
-	box-shadow: 0;
+	box-shadow: none;
+}
+
+.attachment-post-thumbnail {
+    border: 0;
+    box-shadow: none;
+    float: left;
+    margin: 0px;
+    min-width: inherit;
+    overflow: hidden;
 }
 
 /* Typography */
@@ -49,6 +58,11 @@ p {
 
 .hspacer {
 	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.hspacer3 {
+	margin-top: 0px;
 	margin-bottom: 15px;
 }
 
@@ -396,8 +410,8 @@ span.entry-content,  {
 .widget_rss ul li a {
 	display: table-cell;
 	font-family: @headingsFontFamily;
-	font-size: 15px;
-	line-height: 20px;
+	font-size: 13px;
+	line-height: 18px;
 	font-weight: normal;
 }
 
@@ -491,6 +505,7 @@ span.rss-date {
 	margin-bottom: 0px;
 	margin-top: 13px;
 	line-height: 20px;
+	text-transform: capitalize;
 }
 
 .featured-header h6 {

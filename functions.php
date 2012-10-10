@@ -61,7 +61,7 @@ function registerstyles() {
 	
 // Enable post thumbnails
 	add_theme_support('post-thumbnails');
-	set_post_thumbnail_size(200, 200, true);
+	set_post_thumbnail_size(140, 100, true);
 
 // Custom Image Sizes
 // -----------------------------------------------------------------------------
