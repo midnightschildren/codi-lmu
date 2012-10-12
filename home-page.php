@@ -40,6 +40,7 @@
         'post_type' => array( 'people', 'internships', 'festivals', 'videos' ),
         'post_status' => 'publish',
         'posts_per_page' => 2,
+        'paged' => get_query_var('paged'),
         'order' => 'DESC'
       );
         
@@ -59,5 +60,6 @@
   </div>
 </div>
 <?php endwhile; endif; ?>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

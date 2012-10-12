@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Features
+ * Template Name: Festivals
  *
  * @package WordPress
  * @subpackage Simon_WP_Framework
@@ -9,7 +9,7 @@
 
 <div class="grid_8 alpha feature-page">
     <h1 class="salmon fpageheader">
-      <?php the_title(); ?>
+      SFTV <?php the_title(); ?>
     </h1>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">
@@ -21,16 +21,16 @@
       $temp_query = clone $wp_query;
                 
       $args=array(
-        'post_type' => 'feature',
+        'post_type' => 'festivals',
         'post_status' => 'publish',
-        'posts_per_page' => 1,
+        'posts_per_page' => 4,
         'order' => 'DESC'
       );
         
       $wp_query = null;
       $wp_query = new WP_Query($args);
       $LOOP_ROW_COUNT = 1;
-      get_template_part( 'loop', 'featurepage' );
+      get_template_part( 'loop', 'peoplepage' );
       
       // now back to our regularly scheduled programming
       $wp_query = $temp_query;

@@ -64,7 +64,7 @@
       
   </div>
   <?php endwhile; ?>
-<?php get_template_part( '/inc/nav' );?>  
+<?php //get_template_part( '/inc/nav' );?>  
 <?php else : ?>
   
 <?php endif; ?> 
