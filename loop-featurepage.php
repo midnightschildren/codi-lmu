@@ -27,9 +27,9 @@
           </h1>
               <?php the_excerpt(); ?> 
           <p class="readmore peoplespacer gray"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
-          <div class="grid_6 alpha featured-text pull-left">
+          <div class="grid_6 alpha featured-text pull-left"><div class="lpotb tagsblock">
           <?php if( function_exists('ADDTOANY_SHARE_SAVE_KIT') ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
-          <p class="lpotb tagsblock"><?php the_tags(); ?></p>
+          <?php the_tags(); ?></div>
           </div>
         </div>
         <div class="grid_2">

@@ -33,7 +33,7 @@
       
       <div class="grid_6 alpha pull-right featured-text">
 	      <?php the_excerpt(); ?> 
-        <p class="readmore blue lpotb"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
+        <p class="readmore blue peoplespacer"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
       </div>
   </div>
   <?php endwhile; ?>
