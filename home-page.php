@@ -16,11 +16,12 @@
 
 <?php // Featured Feature
       $temp_query = clone $wp_query;
-                
+      $paged = (get_query_var('page')) ? get_query_var('page') : 1;          
       $args=array(
         'post_type' => 'feature',
         'post_status' => 'publish',
         'posts_per_page' => 1,
+        'paged' => $paged,
         'order' => 'DESC'
       );
         
@@ -35,12 +36,12 @@
 
 <?php // Recent Posts
       $temp_query = clone $wp_query;
-                
+      $paged = (get_query_var('page')) ? get_query_var('page') : 1;          
       $args=array(
         'post_type' => array( 'people', 'internships', 'festivals', 'videos' ),
         'post_status' => 'publish',
         'posts_per_page' => 2,
-        'paged' => get_query_var('paged'),
+        'paged' => $paged,
         'order' => 'DESC'
       );
         
@@ -54,7 +55,7 @@
     ?>
 
 
-      <?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+      
     </div>
     
   </div>

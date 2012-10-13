@@ -44,11 +44,15 @@ function registerstyles() {
        wp_deregister_script('jquery');
        wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"), false);
        wp_enqueue_script('jquery');
+       wp_register_script('emma', ("https://app.e2ma.net/app2/audience/tts_signup/1721952/c542369f5557e2325dad8adb7bb01746/1715422/?v=a"), false);
+       wp_enqueue_script('emma');
     }
 
     wp_register_script('custom', get_bloginfo('stylesheet_directory').'/js/custom.js', array('jquery'), null, true);
 
     wp_enqueue_script('custom');
+
+
 
 // Set Content Width
 	$content_width = 728;

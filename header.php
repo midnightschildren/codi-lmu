@@ -30,7 +30,7 @@
   <a href="http://sftv.lmu.edu/" id="LMUSofFilm">LMU School of Film and Television</a>
 <div class="newsletter grid_4 pull-right">
   
-  <script type="text/javascript" src="https://app.e2ma.net/app2/audience/tts_signup/1721952/c542369f5557e2325dad8adb7bb01746/1715422/?v=a"></script>
+  
   <div id="load_check" class="signup_form_message" >This form needs Javascript to display, which your browser doesn't support. 
   <a href="https://app.e2ma.net/app2/audience/signup/1721952/1715422/?v=a"> Sign up here</a> instead </div>
   <script type="text/javascript">signupFormObj.drawForm();</script>
@@ -41,3 +41,4 @@
   </div>
   <div id="navigationline" class="grid_8 pull-right"></div>
 </div>
+<div id="moveablefeast">

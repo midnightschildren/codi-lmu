@@ -1,4 +1,6 @@
 <?php if (have_posts()) : ?>
+
+
   <?php 
     // this is set in the parent template before get_template_part() is called
     // but we can't be sure so defaulting to 2
@@ -48,12 +50,9 @@
               <?php the_excerpt(); ?> 
           
 
-          <?php // Link More
-          $linkurl = get_custom_field('post_link');
-          if( !empty($linkurl) ) :
-        ?>
+          
               <p class="readmore peoplespacer gray"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
-              <?php endif; ?>
+              
 
         </div>
         
@@ -64,7 +63,7 @@
       
   </div>
   <?php endwhile; ?>
-<?php //get_template_part( '/inc/nav' );?>  
+<?php get_template_part( '/inc/nav' );?>  
 <?php else : ?>
   
 <?php endif; ?> 

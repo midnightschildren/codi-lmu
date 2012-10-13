@@ -228,7 +228,8 @@ body { background: @bodyBackground }
 #header {
   height: 150px;
   padding-top: 15px;
-  padding-bottom: 30px;
+  position: fixed;
+  background-color: #fff;
 }
 
 .dark_navigation #navigation {
@@ -326,9 +327,14 @@ body { background: @bodyBackground }
 #navigation li:hover > a, #navigation ul ul :hover > a, #navigation a:focus, #navigation li.active > a, body.single-people #navigation li.menu-people > a, body.single-feature #navigation li.menu-features > a{
   border-bottom: 5px solid #c8c8c8;
 }
-#navigation li:hover > a, #navigation a:focus {
+
+#navigation a:active {
+  color: #c7c7c9;
+}
+
+#navigation li:hover > a {
   
-  color: #373737;
+  color: #000;
 }
 #navigation ul li:hover > ul {
   display: block;

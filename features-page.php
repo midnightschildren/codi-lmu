@@ -23,7 +23,8 @@
       $args=array(
         'post_type' => 'feature',
         'post_status' => 'publish',
-        'posts_per_page' => 1,
+        'posts_per_page' => 4,
+        'paged' => get_query_var('paged'),
         'order' => 'DESC'
       );
         

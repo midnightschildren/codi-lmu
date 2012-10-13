@@ -7,7 +7,7 @@
  * @since Simon WP Framework 1.0
  */
 ?>
-
+</div>
 <div style="clear: both"></div>
 </div>
 <div id="footer">
