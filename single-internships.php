@@ -31,9 +31,9 @@ get_header(); ?>
               <a href="<?php print_custom_field('post_link'); ?>"><?php print_custom_field('post_link_label'); ?></a> ></p>
               <?php endif; ?>
 
-          <div class="grid_6 alpha featured-text pull-left">
+          <div class="grid_6 alpha featured-text pull-left"><div class="lpotb2 tagsblock">
           <?php if( function_exists('ADDTOANY_SHARE_SAVE_KIT') ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
-          <p class="lpotb tagsblock"><?php the_tags(); ?></p>
+          <?php the_tags(); ?></div>
           </div>
         </div>
         <div class="grid_2">

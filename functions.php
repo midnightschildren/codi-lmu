@@ -117,7 +117,134 @@ function my_entry_published_link() {
     return $out;
 }
 
+// Next and Previous Links
 
+/**
+ * Return the next posts page link.
+ *
+ * @since 2.7.0
+ *
+ * @param string $label Content for link text.
+ * @param int $max_page Optional. Max pages.
+ * @return string|null
+ */
+function lmu_get_next_posts_link( $label = null, $max_page = 0 ) {
+    global $paged, $wp_query;
+
+    if ( !$max_page )
+        $max_page = $wp_query->max_num_pages;
+
+    if ( !$paged )
+        $paged = 1;
+
+    $nextpage = intval($paged) + 1;
+
+    if ( null === $label )
+        $label = __( 'Next Page &raquo;' );
+
+    if ( !is_single() && ( $nextpage <= $max_page ) ) {
+        $attr = apply_filters( 'next_posts_link_attributes', '' );
+        return '<a href="' . next_posts( $max_page, false ) . "\" $attr>" . preg_replace('/&([^#])(?![a-z]{1,8};)/i', '&#038;$1', $label) . '</a> >';
+    }
+}
+
+/**
+ * Display the next posts page link.
+ *
+ * @since 0.71
+ * @uses get_next_posts_link()
+ *
+ * @param string $label Content for link text.
+ * @param int $max_page Optional. Max pages.
+ */
+function lmu_next_posts_link( $label = null, $max_page = 0 ) {
+    echo lmu_get_next_posts_link( $label, $max_page );
+}
+
+/**
+ * Return the previous posts page link.
+ *
+ * @since 2.7.0
+ *
+ * @param string $label Optional. Previous page link text.
+ * @return string|null
+ */
+function lmu_get_previous_posts_link( $label = null ) {
+    global $paged;
+
+    if ( null === $label )
+        $label = __( '&laquo; Previous Page' );
+
+    if ( !is_single() && $paged > 1 ) {
+        $attr = apply_filters( 'previous_posts_link_attributes', '' );
+        return '< <a href="' . previous_posts( false ) . "\" $attr>". preg_replace( '/&([^#])(?![a-z]{1,8};)/i', '&#038;$1', $label ) .'</a>';
+    }
+}
+
+/**
+ * Display the previous posts page link.
+ *
+ * @since 0.71
+ * @uses get_previous_posts_link()
+ *
+ * @param string $label Optional. Previous page link text.
+ */
+function lmu_previous_posts_link( $label = null ) {
+    echo lmu_get_previous_posts_link( $label );
+}
+
+/**
+ * Return post pages link navigation for previous and next pages.
+ *
+ * @since 2.8
+ *
+ * @param string|array $args Optional args.
+ * @return string The posts link navigation.
+ */
+function lmu_get_posts_nav_link( $args = array() ) {
+    global $wp_query;
+
+    $return = '';
+
+    if ( !is_singular() ) {
+        $defaults = array(
+            'sep' => ' &#8212; ',
+            'prelabel' => __('&laquo; Previous Page'),
+            'nxtlabel' => __('Next Page &raquo;'),
+        );
+        $args = wp_parse_args( $args, $defaults );
+
+        $max_num_pages = $wp_query->max_num_pages;
+        $paged = get_query_var('paged');
+
+        //only have sep if there's both prev and next results
+        if ($paged < 2 || $paged >= $max_num_pages) {
+            $args['sep'] = '';
+        }
+
+        if ( $max_num_pages > 1 ) {
+            $return = lmu_get_previous_posts_link($args['prelabel']);
+            $return .= preg_replace('/&([^#])(?![a-z]{1,8};)/i', '&#038;$1', $args['sep']);
+            $return .= lmu_get_next_posts_link($args['nxtlabel']);
+        }
+    }
+    return $return;
+
+}
+
+/**
+ * Display post pages link navigation for previous and next pages.
+ *
+ * @since 0.71
+ *
+ * @param string $sep Optional. Separator for posts navigation links.
+ * @param string $prelabel Optional. Label for previous pages.
+ * @param string $nxtlabel Optional Label for next pages.
+ */
+function lmu_posts_nav_link( $sep = '', $prelabel = '', $nxtlabel = '' ) {
+    $args = array_filter( compact('sep', 'prelabel', 'nxtlabel') );
+    echo lmu_get_posts_nav_link($args);
+}
 
 	
 // Add Bread Crumbs
