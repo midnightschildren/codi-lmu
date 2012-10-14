@@ -8,5 +8,5 @@
  */
  ?>
 <div class="postnavigation featured-home alpha grid_8">
-<div class="pull-left"><h3 class="people_stitle"><?php lmu_posts_nav_link(' | ', 'Newer Posts', 'More Posts');  ?></h3></div>
+<div class="pull-left"><h3 class="people_stitle"><?php lmu_posts_nav_link(' | ', 'Previous Posts', 'More Posts');  ?></h3></div>
 </div> 
