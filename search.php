@@ -7,8 +7,9 @@
  * @since Simon WP Framework 1.0
  */get_header(); ?>
 
-<div class="grid_8 alpha">
-  <h3>Search results for "<?php the_search_query(); ?>"</h3>
+<div class="grid_8 alpha feature-page">
+  <h1 class="salmon fpageheader">
+  Search results for "<?php the_search_query(); ?>"</h1>
   <?php 
     // attempt to guess the loop type we want to use
     // post_type > category > default

@@ -75,7 +75,7 @@ function registerstyles() {
     add_image_size( "page-people", 140, 9999);
 
 // ADD POST FORMATS
-	add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio', 'feature', 'festivals', 'internships', 'people' ) );
 
 // Editor Support
 	add_editor_style();
@@ -308,11 +308,7 @@ function the_breadcrumb() {
 
     add_filter('widget_text', 'do_shortcode');
 
-// Add Custom HTML to Images
-function filter_images($content){
-    return preg_replace('/<img (.*) \/>\s*/iU', '<div class="swpf-img"><img \1 /></div>', $content);
-}
-add_filter('the_content', 'filter_images');
+
 
 
 // Template for comments and pingbacks.
