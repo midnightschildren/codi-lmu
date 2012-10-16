@@ -21,7 +21,7 @@
       $temp_query = clone $wp_query;
                 
       $args=array(
-        'post_type' => 'feature',
+        'post_type' => 'videos',
         'post_status' => 'publish',
         'posts_per_page' => 2,
         'paged' => get_query_var('paged'),
@@ -31,7 +31,7 @@
       $wp_query = null;
       $wp_query = new WP_Query($args);
       $LOOP_ROW_COUNT = 1;
-      get_template_part( 'loop', 'featurepage' );
+      get_template_part( 'loop', 'videopage' );
       
       // now back to our regularly scheduled programming
       $wp_query = $temp_query;

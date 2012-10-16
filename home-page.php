@@ -40,7 +40,7 @@
       $args=array(
         'post_type' => array( 'people', 'internships', 'festivals', 'videos' ),
         'post_status' => 'publish',
-        'posts_per_page' => 1,
+        'posts_per_page' => 2,
         'paged' => $paged,
         'order' => 'DESC'
       );

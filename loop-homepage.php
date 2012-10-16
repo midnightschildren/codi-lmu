@@ -24,6 +24,12 @@
       <div class="grid_8 alpha featured-posts">
         <div class="grid_2 alpha">
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('page-feature'); ?></a>
+              <?php 
+                $ptype = get_post_type( $post->ID );
+                if($ptype == videos){
+                echo '<span class="special">&nbsp;</span>'; 
+                }
+               ?> 
         </div>
         <div class="grid_6 featured-text pull-left">
           <h6><?php echo my_entry_published_link(); ?></h6>
@@ -34,6 +40,10 @@
                 if($ptype == people){
                 echo '<a href="'.get_home_url(); 
                 echo '/sftvpeople/">SFTV '.get_post_type( $post->ID ); } 
+                elseif($ptype == videos){
+                echo '<a href="'.get_home_url(); 
+                echo '/sftvvideos/">Press Play'; 
+                }  
                 else { 
                 echo '<a href="'.get_home_url(); 
                 echo '/sftv'.get_post_type( $post->ID );
@@ -47,9 +57,18 @@
           <h2 class="altheader hspacer3" id="post-<?php the_ID(); ?>">
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
           </h2>
-              <?php the_excerpt(); ?> 
-          
-
+          <?php
+              $ptype = get_post_type( $post->ID );
+                if($ptype == videos){
+                echo '</div> <div class="grid_8 alpha">';  
+                print_custom_field('videoiframe');
+                echo '</div> <div class="grid_6 alpha video-text pull-right">';
+                the_excerpt();
+                }
+                else {
+                the_excerpt();  
+                }
+          ?>      
           
               <p class="readmore peoplespacer gray"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
               
