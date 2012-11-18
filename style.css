@@ -4031,6 +4031,12 @@ input#s {
   background-color: #ece9e7;
   background: transparent url(search.gif) 0px 0px no-repeat;
 }
+
+input#searchsubmit, input#e2ma_signup_submit_button {
+-webkit-border-radius:0; 
+border-radius:0;
+}
+
 #submit,
 .wpcf7-submit {
   font: bold 13px "OpenSans", Helvetica, Arial, sans-serif;
@@ -4050,13 +4056,7 @@ input#s {
   margin: 0;
   height: auto;
 }
-@font-face {
-  font-family: 'ModernPictogramsNormal';
-  src: url('fonts/modernpics-webfont.eot');
-  src: url('fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/modernpics-webfont.woff') format('woff'), url('fonts/modernpics-webfont.ttf') format('truetype'), url('fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
 @font-face {
   font-family: 'OpenSansLight';
   src: url('fonts/OpenSans-Light-webfont.eot');
@@ -4099,34 +4099,7 @@ input#s {
   font-weight: bold;
   font-style: italic;
 }
-@font-face {
-  font-family: 'OpenSansSemibold';
-  src: url('fonts/OpenSans-Semibold-webfont.eot');
-  src: url('fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'OpenSansSemibold';
-  src: url('fonts/OpenSans-SemiboldItalic-webfont.eot');
-  src: url('fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'OpenSansExtrabold';
-  src: url('fonts/OpenSans-ExtraBold-webfont.eot');
-  src: url('fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'OpenSansExtrabold';
-  src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot');
-  src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
+
 @font-face {
   font-family: 'Enriqueta';
   src: url('fonts/Enriqueta-Regular-webfont.eot');
@@ -4999,13 +4972,13 @@ span.rss-date,
   padding-right: 15px;
   margin-top: -2px;
 }
-@media only screen and (max-device-width: 700px) {
+@media handheld, only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
   html {
     -webkit-text-size-adjust: auto;
     -moz-text-size-adjust: auto;
     -ms-text-size-adjust: auto;
   }
-  p {
+  p, .events_empty, .eb_event_list_title {
     -webkit-text-size-adjust: 175%;
     -moz-text-size-adjust: 175%;
     -ms-text-size-adjust: 175%;
@@ -5095,11 +5068,11 @@ span.rss-date,
     box-shadow: 5px 0 5px -5px #666, 0 5px 5px -5px #666, -5px 0 5px -5px #666;
   }
   .grid_2 {
-    width: 46%;
+    width: 33%;
     margin-right: 2%;
   }
   .grid_6 {
-    width: 52%;
+    width: 65%;
   }
   .wp-post-image,
   .size-full,
@@ -5114,7 +5087,7 @@ span.rss-date,
   }
   .video-text,
   .featured-text {
-    width: 50%;
+    width: 63%;
     margin-right: 2%;
   }
   #moveablefeast {
