@@ -11,38 +11,17 @@
     <h1 class="salmon fpageheader">
       Tag: <?php single_tag_title(); ?>
     </h1>
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <div class="post" id="post-<?php the_ID(); ?>">
-
-    <div class="entry">
-      
-
-<?php // Featured Feature
-      $temp_query = clone $wp_query;
-                
-      $args=array(
-        'post_type' => 'feature',
-        'post_status' => 'publish',
-        'posts_per_page' => 4,
-        'paged' => get_query_var('paged'),
-        'order' => 'DESC'
-      );
-        
-      $wp_query = null;
-      $wp_query = new WP_Query($args);
-      $LOOP_ROW_COUNT = 1;
-      get_template_part( 'loop', 'featurepage' );
-      
-      // now back to our regularly scheduled programming
-      $wp_query = $temp_query;
-    ?>
-
-
-      
-    </div>
-    
-  </div>
+  <?php 
+    // attempt to guess the loop type we want to use
+    // post_type > category > default
+    $template = '';
+    if( $_GET['post_type']) {
+      $template = $_GET['post_type'];
+    } else if ( $_GET['category_name'] ) {
+      $template = $_GET['category_name'];
+    } 
+    echo get_template_part('loop', $template); 
+  ?>
 </div>
-<?php endwhile; endif; ?>
-<?php get_sidebar(); ?>
+<?php get_sidebar($template); ?>
 <?php get_footer(); ?>
