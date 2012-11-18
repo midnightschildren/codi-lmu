@@ -18,7 +18,7 @@
 <?php } ?>
 <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 
-<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/favicon.ico" type="image/x-icon" />
 
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
