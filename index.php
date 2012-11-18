@@ -23,4 +23,5 @@ get_header(); ?>
   ?>
 </div>
 <?php get_sidebar($template); ?>
+
 <?php get_footer(); ?>

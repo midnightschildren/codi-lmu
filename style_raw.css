@@ -1,15 +1,3 @@
-/*   
-Theme Name: POTG - Loglines
-Theme URI: http://simonwebdesign.com/simon-wordpress-framework-blank-theme/
-Description: A blank framework using 960.gs grid system and is licensed under the <a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>. It's a blank theme that provides the most flexibility for creating child themes from Simon WP Framework. Utilizes Theme Options to change the website width to accomadate larger resolutions, soften edges, and colorize Navigation. Theme comes with custom icons. This Framework is widget ready in the sidebar and in the footer.
-Author: Jeff Uyeno modified by Amar Ravva
-Author URI: http://codisattva.com
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Version: 1.3.0
-Tags: dark, light, white, black, gray, two-columns, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-menu, editor-style, post-formats, theme-options
-*/
-
 article,
 aside,
 details,
@@ -4029,7 +4017,7 @@ input#s {
   width: 24px;
   height: 24px;
   background-color: #ece9e7;
-  background: transparent url(search.gif) 0px 0px no-repeat;
+  background: transparent url(../search.gif) 0px 0px no-repeat;
 }
 #submit,
 .wpcf7-submit {
@@ -4052,92 +4040,92 @@ input#s {
 }
 @font-face {
   font-family: 'ModernPictogramsNormal';
-  src: url('fonts/modernpics-webfont.eot');
-  src: url('fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/modernpics-webfont.woff') format('woff'), url('fonts/modernpics-webfont.ttf') format('truetype'), url('fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+  src: url('../fonts/modernpics-webfont.eot');
+  src: url('../fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/modernpics-webfont.woff') format('woff'), url('../fonts/modernpics-webfont.ttf') format('truetype'), url('../fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenSansLight';
-  src: url('fonts/OpenSans-Light-webfont.eot');
-  src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Light-webfont.woff') format('woff'), url('fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+  src: url('../fonts/OpenSans-Light-webfont.eot');
+  src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenSansLight';
-  src: url('fonts/OpenSans-LightItalic-webfont.eot');
-  src: url('fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+  src: url('../fonts/OpenSans-LightItalic-webfont.eot');
+  src: url('../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'OpenSans';
-  src: url('fonts/OpenSans-Regular-webfont.eot');
-  src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Regular-webfont.woff') format('woff'), url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('fonts/OpenSans-Regular-webfont.svg#OpenSans') format('svg');
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#OpenSans') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenSans';
-  src: url('fonts/OpenSans-Italic-webfont.eot');
-  src: url('fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Italic-webfont.woff') format('woff'), url('fonts/OpenSans-Italic-webfont.ttf') format('truetype'), url('fonts/OpenSans-Italic-webfont.svg#OpenSans') format('svg');
+  src: url('../fonts/OpenSans-Italic-webfont.eot');
+  src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Italic-webfont.woff') format('woff'), url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Italic-webfont.svg#OpenSans') format('svg');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'OpenSans';
-  src: url('fonts/OpenSans-Bold-webfont.eot');
-  src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Bold-webfont.woff') format('woff'), url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Bold-webfont.svg#OpenSans') format('svg');
+  src: url('../fonts/OpenSans-Bold-webfont.eot');
+  src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Bold-webfont.svg#OpenSans') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenSans';
-  src: url('fonts/OpenSans-BoldItalic-webfont.eot');
-  src: url('fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-BoldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+  src: url('../fonts/OpenSans-BoldItalic-webfont.eot');
+  src: url('../fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-BoldItalic-webfont.woff') format('woff'), url('../fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: 'OpenSansSemibold';
-  src: url('fonts/OpenSans-Semibold-webfont.eot');
-  src: url('fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+  src: url('../fonts/OpenSans-Semibold-webfont.eot');
+  src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenSansSemibold';
-  src: url('fonts/OpenSans-SemiboldItalic-webfont.eot');
-  src: url('fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+  src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot');
+  src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'), url('../fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'OpenSansExtrabold';
-  src: url('fonts/OpenSans-ExtraBold-webfont.eot');
-  src: url('fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+  src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
+  src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenSansExtrabold';
-  src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot');
-  src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
+  src: url('../fonts/OpenSans-ExtraBoldItalic-webfont.eot');
+  src: url('../fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'), url('../fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Enriqueta';
-  src: url('fonts/Enriqueta-Regular-webfont.eot');
-  src: url('fonts/Enriqueta-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Enriqueta-Regular-webfont.woff') format('woff'), url('fonts/Enriqueta-Regular-webfont.ttf') format('truetype'), url('fonts/Enriqueta-Regular-webfont.svg#EnriquetaRegular') format('svg');
+  src: url('../fonts/Enriqueta-Regular-webfont.eot');
+  src: url('../fonts/Enriqueta-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Enriqueta-Regular-webfont.woff') format('woff'), url('../fonts/Enriqueta-Regular-webfont.ttf') format('truetype'), url('../fonts/Enriqueta-Regular-webfont.svg#EnriquetaRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Enriqueta';
-  src: url('fonts/Enriqueta-Bold-webfont.eot');
-  src: url('fonts/Enriqueta-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Enriqueta-Bold-webfont.woff') format('woff'), url('fonts/Enriqueta-Bold-webfont.ttf') format('truetype'), url('fonts/Enriqueta-Bold-webfont.svg#EnriquetaBold') format('svg');
+  src: url('../fonts/Enriqueta-Bold-webfont.eot');
+  src: url('../fonts/Enriqueta-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Enriqueta-Bold-webfont.woff') format('woff'), url('../fonts/Enriqueta-Bold-webfont.ttf') format('truetype'), url('../fonts/Enriqueta-Bold-webfont.svg#EnriquetaBold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
@@ -4360,7 +4348,7 @@ body.single-feature #navigation li.menu-features > a {
   width: 1060px;
   margin-right: auto;
   margin-left: auto;
-  background: url(shadow_footer.png) 0px 0px repeat-y;
+  background: url(../shadow_footer.png) 0px 0px repeat-y;
 }
 .time {
   margin: 0 0 0 3px;
@@ -4446,7 +4434,7 @@ body.single-feature #navigation li.menu-features > a {
 }
 .shadow_body {
   width: 1060px;
-  background: url(shadow_box.png) 0px 0px repeat-y;
+  background: url(../shadow_box.png) 0px 0px repeat-y;
   margin: auto;
   background-color: #fff;
 }
@@ -4623,7 +4611,7 @@ p {
   margin-top: 80px;
   box-shadow: none;
   text-shadow: none;
-  background: #77787b url(shadow_box.png) 0px 0px repeat-y;
+  background: #77787b url(../shadow_box.png) 0px 0px repeat-y;
   color: #fff;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 11px;
@@ -4654,7 +4642,7 @@ p {
   height: 20px;
   margin-right: auto;
   margin-left: auto;
-  background: url(background_shadow_bottom.png) 0px 0px;
+  background: url(../background_shadow_bottom.png) 0px 0px;
   background-repeat: no-repeat;
   margin-bottom: 120px;
 }
@@ -4674,13 +4662,13 @@ p {
   text-indent: 100%;
   display: block;
   white-space: nowrap;
-  background: url(youtube.gif) 0px 0px no-repeat;
+  background: url(../youtube.gif) 0px 0px no-repeat;
 }
 #youtube:hover {
-  background: url(youtube.gif) 0px -21px no-repeat;
+  background: url(../youtube.gif) 0px -21px no-repeat;
 }
 #youtube:active {
-  background: url(youtube.gif) 0px -42px no-repeat;
+  background: url(../youtube.gif) 0px -42px no-repeat;
 }
 #facebook {
   width: 65px;
@@ -4689,13 +4677,13 @@ p {
   text-indent: 100%;
   display: block;
   white-space: nowrap;
-  background: url(facebook.gif) 0px 0px no-repeat;
+  background: url(../facebook.gif) 0px 0px no-repeat;
 }
 #facebook:hover {
-  background: url(facebook.gif) 0px -21px no-repeat;
+  background: url(../facebook.gif) 0px -21px no-repeat;
 }
 #facebook:active {
-  background: url(facebook.gif) 0px -42px no-repeat;
+  background: url(../facebook.gif) 0px -42px no-repeat;
 }
 #twitter {
   width: 63px;
@@ -4705,13 +4693,13 @@ p {
   text-indent: 100%;
   display: block;
   white-space: nowrap;
-  background: url(twitter.gif) 0px 0px no-repeat;
+  background: url(../twitter.gif) 0px 0px no-repeat;
 }
 #twitter:hover {
-  background: url(twitter.gif) 0px -21px no-repeat;
+  background: url(../twitter.gif) 0px -21px no-repeat;
 }
 #twitter:active {
-  background: url(twitter.gif) 0px -42px no-repeat;
+  background: url(../twitter.gif) 0px -42px no-repeat;
 }
 #e2ma_signup_message,
 .e2ma_signup_form_required_footnote,
@@ -4736,7 +4724,7 @@ input[type="submit"] {
 #e2ma_signup_submit_button {
   height: 24px;
   width: 109px;
-  background: url(updates.png) 0px 0px no-repeat;
+  background: url(../updates.png) 0px 0px no-repeat;
   border: none;
   color: transparent;
 }
@@ -4751,13 +4739,13 @@ input[type="submit"] {
   text-indent: 100%;
   display: block;
   white-space: nowrap;
-  background: url(LogLines_logo.png) 0px 0px no-repeat;
+  background: url(../LogLines_logo.png) 0px 0px no-repeat;
 }
 #Loglines_logo:hover {
-  background: url(LogLines_logo.png) 0px -71px no-repeat;
+  background: url(../LogLines_logo.png) 0px -71px no-repeat;
 }
 #Loglines_logo:active {
-  background: url(LogLines_logo.png) 0px -142px no-repeat;
+  background: url(../LogLines_logo.png) 0px -142px no-repeat;
 }
 #LMUSofFilm {
   width: 483px;
@@ -4766,13 +4754,13 @@ input[type="submit"] {
   text-indent: 100%;
   display: block;
   white-space: nowrap;
-  background: url(SFTV_logo.png) 0px 0px no-repeat;
+  background: url(../SFTV_logo.png) 0px 0px no-repeat;
 }
 #LMUSofFilm:hover {
-  background: url(SFTV_logo.png) 0px -31px no-repeat;
+  background: url(../SFTV_logo.png) 0px -31px no-repeat;
 }
 #LMUSofFilm:active {
-  background: url(SFTV_logo.png) 0px -62px no-repeat;
+  background: url(../SFTV_logo.png) 0px -62px no-repeat;
 }
 #navigation {
   padding-bottom: 0px;
@@ -4885,7 +4873,7 @@ a.sftvrss img {
   text-indent: 100%;
   display: block;
   white-space: nowrap;
-  background: url(twitter_sq.png) 0px 0px no-repeat;
+  background: url(../twitter_sq.png) 0px 0px no-repeat;
 }
 a.rsswidget:hover {
   text-decoration: underline;
@@ -5145,4 +5133,3 @@ span.rss-date,
     padding-right: 0px;
   }
 }
-
