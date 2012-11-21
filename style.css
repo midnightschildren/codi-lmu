@@ -3700,7 +3700,7 @@ span.rss-date,
     margin-left: 0%;
     margin-bottom: 2%;
   }
-  #footer .black {
+  #footer .black, #footer .widget_text {
     padding-left: 2%;
   }
   .shadow_body {
