@@ -3421,16 +3421,16 @@ td.searchbox {
   color: #47c9f0;
   margin-bottom: -1px;
 }
-.text-5 h3 a {
+.text-ebrite h3 a {
   color: #ff8025;
   margin-bottom: -1px;
 }
-.text-5 {
+.text-ebrite {
   border-top: 10px solid #ff8c3a;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-.text-5 .textwidget {
+.text-ebrite .textwidget {
   padding-bottom: 0px;
   margin-top: 8px;
 }
@@ -3471,7 +3471,7 @@ a.eb_event_list_title,
   line-height: 18px;
   font-weight: normal;
 }
-.text-5 h3 {
+.text-ebrite h3 {
   margin-top: 8px;
 }
 a.rsswidget img,

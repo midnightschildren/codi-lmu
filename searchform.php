@@ -17,7 +17,7 @@
     </table>
   </div>
 </form>
-<div class="text-5">
+<div class="text-ebrite">
 <h3>
 <a class="sftvrss" title="Syndicate this content" href="http://www.eventbrite.com/rss/organizer_list_events/1853301933">
 <img width="20" height="20" alt="RSS" src="http://lmu.codisattva.com/wp-content/themes/codi-lmu/rss_sq.gif" style="border:0">

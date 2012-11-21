@@ -24,6 +24,7 @@
         'post_type' => 'festivals',
         'post_status' => 'publish',
         'posts_per_page' => 4,
+        'paged' => get_query_var('paged'),
         'order' => 'DESC'
       );
         
