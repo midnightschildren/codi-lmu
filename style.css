@@ -3402,11 +3402,15 @@ form#searchform {
 td.searchbox {
   line-height: 24px;
 }
-.widget_twitter {
+.text-5 {
   border-top: 10px solid #59cef1;
   padding-top: 8px;
   margin-bottom: 0px;
   padding-bottom: 0px;
+}
+
+.twitterwidget-title, .widget_twitter h3 {
+  display: none;
 }
 .widget_rss {
   padding-top: 0px;
@@ -3421,6 +3425,17 @@ td.searchbox {
   color: #47c9f0;
   margin-bottom: -1px;
 }
+
+.widget_twitter {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.text-5 h3 a {
+    color: #47C9F0;
+    margin-bottom: -1px;
+}
+
 .text-ebrite h3 a {
   color: #ff8025;
   margin-bottom: -1px;
