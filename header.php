@@ -34,6 +34,12 @@
   <div id="load_check" class="signup_form_message" >This form needs Javascript to display, which your browser doesn't support. 
   <a href="https://app.e2ma.net/app2/audience/signup/1721952/1715422/?v=a"> Sign up here</a> instead </div>
   <script type="text/javascript">signupFormObj.drawForm();</script>
+  <script language=javascript>
+$('.e2ma_signup_form_element input').val(' Enter your email address');
+$('.e2ma_signup_form_element input').focus(function() {
+if ($('.e2ma_signup_form_element input').val() == ' Enter your email address') $('.e2ma_signup_form_element input').val('');
+});
+</script>
  </div> 
   <h1><a href="<?php echo home_url(); ?>/" id="Loglines_logo">Loglines</a></h1>
   <div id="navigation" class="grid_7 pull-right">
