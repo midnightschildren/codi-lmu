@@ -3216,6 +3216,7 @@ p {
 }
 .single h4 {
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
   padding: 0 0 1.2em;
 }
 #footer {

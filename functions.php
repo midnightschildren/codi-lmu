@@ -272,6 +272,21 @@ function the_breadcrumb() {
 	}
 }
 
+// TinyMCE Tyranny
+
+function make_mce_awesome( $init ) {
+    $init['theme_advanced_blockformats'] = 'h4,p';
+    $init['theme_advanced_disable'] = 'underline,spellchecker,wp_help';
+    $init['theme_advanced_more_colors'] = false;
+    $init['theme_advanced_text_colors'] = 'ffb37c,000000,777777';
+    return $init;
+}
+ 
+add_filter('tiny_mce_before_init', 'make_mce_awesome');
+
+
+
+
 // WIdgets
 	if ( function_exists('register_sidebar') )
 	register_sidebar(array(
