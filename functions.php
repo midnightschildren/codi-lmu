@@ -279,12 +279,45 @@ function make_mce_awesome( $init ) {
     $init['theme_advanced_disable'] = 'underline,spellchecker,wp_help';
     $init['theme_advanced_more_colors'] = false;
     $init['theme_advanced_text_colors'] = 'ffb37c,000000,777777';
+    $init['theme_advanced_buttons2_add'] = 'styleselect';
+    $init['theme_advanced_styles'] = 'Caption=wp-caption-text';
     return $init;
 }
  
 add_filter('tiny_mce_before_init', 'make_mce_awesome');
 
+function custom_tinymce( $settings ) {
 
+    $style_formats = array(
+        array(
+        'title'    => 'Caption',
+        'selector' => 'p',
+        'classes'  => 'wp-caption-text',
+        'wrapper'  => true,
+        ),
+    );
+
+    $settings['style_formats'] = json_encode( $style_formats );
+
+    return $settings;
+
+}
+
+add_filter( 'tiny_mce_before_init', 'custom_tinymce' );
+
+// User menu restrictions
+
+function remove_menus () {
+global $menu;
+if( (current_user_can('install_themes')) ) { $restricted = array(__()); }
+else { $restricted = array( __('Posts'), __('Links'), __('Pages')); } // hide these for other roles
+end ($menu);
+while (prev($menu)){
+$value = explode(' ',$menu[key($menu)][0]);
+if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
+}
+}
+add_action('admin_menu', 'remove_menus');
 
 
 // WIdgets
