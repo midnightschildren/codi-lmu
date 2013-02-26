@@ -77,7 +77,7 @@ function registerstyles() {
     add_image_size( "page-people", 140, 9999);
 
 // ADD POST FORMATS
-	add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio', 'feature', 'festivals', 'internships', 'people' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio', 'feature', 'festivals', 'news', 'internships', 'people' ) );
 
 // Editor Support
 	add_editor_style();

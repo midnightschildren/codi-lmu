@@ -38,7 +38,7 @@
       $temp_query = clone $wp_query;
       $paged = (get_query_var('page')) ? get_query_var('page') : 1;          
       $args=array(
-        'post_type' => array( 'people', 'internships', 'festivals', 'videos' ),
+        'post_type' => array( 'people', 'internships', 'festivals', 'news', 'videos' ),
         'post_status' => 'publish',
         'posts_per_page' => 2,
         'paged' => $paged,
