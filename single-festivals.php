@@ -16,7 +16,7 @@ get_header(); ?>
       <div class="grid_8 alpha featured-posts">
         <div class="grid_6 alpha featured-text pull-left">
           <h6><?php echo my_entry_published_link(); ?></h6>
-          <h3 class="people_stitle"><a href="<?php echo home_url(); ?>/sftvfestivals/">Festivals</a></h3>
+          <h3 class="people_stitle"><a href="<?php echo home_url(); ?>/sftvinternships/">Internships &amp; Festivals</a></h3>
           <h1 class="altheader hspacer2" id="post-<?php the_ID(); ?>">
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
           </h1>

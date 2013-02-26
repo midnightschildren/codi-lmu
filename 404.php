@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div class="grid_8"><h1>You just broke the website. Thanks.</h1></div>
+	<div class="grid_8"><h1>Something went awry! Perhaps the search can help:</h1></div>
 
 <?php get_sidebar(); ?>
 

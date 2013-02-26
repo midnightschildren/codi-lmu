@@ -43,7 +43,11 @@
                 elseif($ptype == videos){
                 echo '<a href="'.get_home_url(); 
                 echo '/sftvvideos/">Press Play'; 
-                }  
+                } 
+                elseif($ptype == festivals){
+                echo '<a href="'.get_home_url(); 
+                echo '/sftvinternships/">Festivals'; 
+                }   
                 else { 
                 echo '<a href="'.get_home_url(); 
                 echo '/sftv'.get_post_type( $post->ID );

@@ -21,9 +21,10 @@
       $temp_query = clone $wp_query;
                 
       $args=array(
-        'post_type' => 'internships',
+        'post_type' => array('internships', 'festivals'),
         'post_status' => 'publish',
         'posts_per_page' => 4,
+        'paged' => get_query_var('paged'),
         'order' => 'DESC'
       );
         
