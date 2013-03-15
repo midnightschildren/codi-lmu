@@ -9,7 +9,7 @@
 
 <div class="grid_8 alpha feature-page">
     <h1 class="salmon fpageheader">
-      SFTV <?php the_title(); ?>
+    <?php the_title(); ?>
     </h1>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">

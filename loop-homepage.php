@@ -46,7 +46,11 @@
                 } 
                 elseif($ptype == festivals){
                 echo '<a href="'.get_home_url(); 
-                echo '/sftvinternships/">Festivals'; 
+                echo '/industry/">Festivals'; 
+                }
+                elseif($ptype == internships){
+                echo '<a href="'.get_home_url(); 
+                echo '/industry/">Internships'; 
                 }   
                 else { 
                 echo '<a href="'.get_home_url(); 
