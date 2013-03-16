@@ -37,6 +37,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+img#wpstats{display:none};
+
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
@@ -3426,7 +3428,6 @@ td.searchbox {
   color: #47c9f0;
   margin-bottom: -1px;
 }
-
 .widget_twitter {
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -3436,16 +3437,17 @@ td.searchbox {
     color: #47C9F0;
     margin-bottom: -1px;
 }
-
 .text-ebrite h3 a {
-  color: #ff8025;
+  color: #FF8025;
   margin-bottom: -1px;
 }
+
 .text-ebrite {
-  border-top: 10px solid #ff8c3a;
+  border-top: 10px solid #FF8C3A;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
+
 .text-ebrite .textwidget {
   padding-bottom: 0px;
   margin-top: 8px;
@@ -3701,7 +3703,7 @@ span.rss-date,
     margin-left: 0%;
     margin-bottom: 2%;
   }
-  #footer .black, #footer .widget_text {
+  #footer .black {
     padding-left: 2%;
   }
   .shadow_body {
