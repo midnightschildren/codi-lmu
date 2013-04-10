@@ -29,13 +29,13 @@
     include "Eventbrite.php"; 
 
     $authentication_tokens = array(
-        'app_key'  => 'VX23MMK3JJA6N3THCK',
-        'user_key' => '132701494826014481013');
+        'app_key'  => 'VX23MMK3JJA6N3THCK'
+        );
 
     $eb_client = new Eventbrite( $authentication_tokens );
 
     try {
-        $events = $eb_client->user_list_events(array('event_statuses'=>'live'));
+        $events = $eb_client->user_list_events(array('user'=>'sftvevents@lmu.edu'));
     } catch ( Exception $e ) {
         // Be sure to plan for potential error cases 
         // so that your application can respond appropriately

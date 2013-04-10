@@ -71,14 +71,28 @@
                 echo '</div> <div class="grid_8 alpha">';  
                 print_custom_field('videoiframe');
                 echo '</div> <div class="grid_6 alpha video-text pull-right">';
-                the_excerpt();
+                the_content();
                 }
                 else {
-                the_excerpt();  
+                the_content();  
                 }
           ?>      
           
-              <p class="readmore peoplespacer gray"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
+               <?php // Link More
+          $linkurl = get_custom_field('post_link');
+          if( !empty($linkurl) ) :
+        ?>
+              <p class="readmore peoplespacer gray">
+              <a href="<?php print_custom_field('post_link'); ?>"><?php print_custom_field('post_link_label'); ?></a> ></p>
+              <?php endif; ?>
+
+          <?php // Link More
+          $linkurl = get_custom_field('post_link');
+          if( empty($linkurl) ) :
+        ?>
+              <p class="readmore peoplespacer gray">
+              <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
+              <?php endif; ?>
               
 
         </div>
