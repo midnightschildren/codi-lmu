@@ -25,7 +25,7 @@
           <h1 class="altheader hspacer" id="post-<?php the_ID(); ?>">
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
           </h1>
-              <?php the_excerpt(); ?> 
+              <?php the_content(); ?> 
           
 
           <?php // Link More
