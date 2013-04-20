@@ -3163,6 +3163,16 @@ p {
 .salmon a {
   color: #ff402f;
 }
+
+.bgreen,
+.bgreen a {
+  color: #2fff40;
+}
+
+.green,
+.green a {
+  color: #25ff80;
+}
 .gray,
 .gray a {
   color: #777;
@@ -3537,6 +3547,20 @@ span.rss-date,
 .in-reply-to-meta {
   display: none;
 }
+
+.widget_fastflickrwidget img {
+  margin: 10px 20px 10px 0px;
+}
+
+.widget_fastflickrwidget h3 {
+  color: #25ff80;
+  margin-top: 8px;
+}
+
+.widget_fastflickrwidget {
+  border-top: 10px solid #2fff40;
+}
+
 .featured-header {
   width: 600px;
   background-color: #3286cd;
