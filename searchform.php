@@ -63,7 +63,7 @@
 <div class="sidebaritem widget_twitter twitter-2">
 <ul>
 <?php
-  $tweets = getTweets(3);
+  $tweets = getTweets(3, @LMUsftv, array('include_rts'=>true));
 
   foreach($tweets as $tweet){
             $pubDate        = $tweet['created_at'];
