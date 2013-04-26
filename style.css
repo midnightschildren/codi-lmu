@@ -3171,7 +3171,7 @@ p {
 
 .green,
 .green a {
-  color: #25ff80;
+  color: #ff3bea;
 }
 .gray,
 .gray a {
@@ -3553,12 +3553,12 @@ span.rss-date,
 }
 
 .widget_fastflickrwidget h3 {
-  color: #25ff80;
+  color: #ff3bea;
   margin-top: 8px;
 }
 
 .widget_fastflickrwidget {
-  border-top: 10px solid #2fff40;
+  border-top: 10px solid #f82fff;
 }
 
 .featured-header {
