@@ -11,9 +11,9 @@ get_header(); ?>
     // Storing this before we start mucking up the loop
     $postID = $post->ID; ?>
 
- <div class="grid_8 alpha pull-left featured-home <?php echo $oddClass ?>">
+ <div class="grid-8 alpha pull-left featured-home <?php echo $oddClass ?>">
         
-      <div class="grid_8 alpha">
+      <div class="grid-8 alpha">
         
         <h6><?php echo my_entry_published_link(); ?></h6>
         <h3 class="people_stitle"><a href="<?php echo home_url(); ?>/sftvvideos/">Press Play</a></h3>
@@ -26,7 +26,7 @@ get_header(); ?>
               <?php print_custom_field('videoiframe'); ?>
         </div>
         <?php the_content(); ?> 
-        <div class="grid_8 alpha featured-text pull-left"><div class="lpotb tagsblock">
+        <div class="grid-8 alpha featured-text pull-left"><div class="lpotb tagsblock">
           <?php if( function_exists('ADDTOANY_SHARE_SAVE_KIT') ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
           <?php the_tags(); ?></div>
           </div>

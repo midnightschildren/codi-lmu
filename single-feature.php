@@ -11,10 +11,10 @@ get_header(); ?>
     // Storing this before we start mucking up the loop
     $postID = $post->ID; ?>
 
- <div class="grid_8 alpha pull-left featured-home <?php echo $oddClass ?>">
+ <div class="grid-8 alpha pull-left featured-home <?php echo $oddClass ?>">
         
-      <div class="grid_8 alpha featured-header">
-        <div class="grid_8 single-feature-text">
+      <div class="grid-8 alpha featured-header">
+        <div class="grid-8 single-feature-text">
         <h6><?php echo my_entry_published_link(); ?></h6>
         <h3 class="feature_stitle"><a href="<?php echo home_url(); ?>/features/">Feature</a></h3>
         <h1 class="altheader white" id="post-<?php the_ID(); ?>">
@@ -24,7 +24,7 @@ get_header(); ?>
       </div>  
       
         <?php the_content(); ?> 
-        <div class="grid_8 alpha featured-text pull-left"><div class="lpotb tagsblock">
+        <div class="grid-8 alpha featured-text pull-left"><div class="lpotb tagsblock">
           <?php if( function_exists('ADDTOANY_SHARE_SAVE_KIT') ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
           <?php the_tags(); ?></div>
           </div>

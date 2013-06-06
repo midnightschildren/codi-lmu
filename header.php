@@ -27,8 +27,10 @@
 <div class="shadow_body" id="options-wrapper"> 
 <div id="logline" class="container">
 <div id="header" class="container">
+<div class="grid-7">
   <a href="http://sftv.lmu.edu/" id="LMUSofFilm">LMU School of Film and Television</a>
-<div class="newsletter grid_4 pull-right">
+</div>
+<div class="newsletter grid-5 pull-right">
   
   
   <div id="load_check" class="signup_form_message" >This form needs Javascript to display, which your browser doesn't support. 
@@ -41,11 +43,11 @@ if ($('.e2ma_signup_form_element input').val() == ' Enter your email address') $
 });
 </script>
  </div> 
-  <h1><a href="<?php echo home_url(); ?>/" id="Loglines_logo">Loglines</a></h1>
-  <div id="navigation" class="grid_7 pull-right">
+  <h1 class="grid-4"><a href="<?php echo home_url(); ?>/" id="Loglines_logo">Loglines</a></h1>
+  <div id="navigation" class="grid-7 pull-right">
     <?php wp_nav_menu(); ?>  
   </div>
-  <div id="navigationline" class="grid_8 pull-right"></div>
+  <div id="navigationline" class="grid-8 pull-right"></div>
 </div>
 <div id="moveablefeast">
   

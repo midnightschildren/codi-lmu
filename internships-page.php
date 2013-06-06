@@ -7,7 +7,7 @@
  * @since Simon WP Framework 1.0
  */get_header(); ?>
 
-<div class="grid_8 alpha feature-page">
+<div class="grid-8 alpha feature-page">
     <h1 class="salmon fpageheader">
     <?php the_title(); ?>
     </h1>

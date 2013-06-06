@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div class="grid_8 alpha">
+<div class="grid-8 alpha">
   <?php 
     // Ask for the category loop if we're in a single category view
     // this is so that we don't duplicate templates so that we can call

@@ -7,7 +7,7 @@
  * @since Simon WP Framework 1.0
  */get_header(); ?>
 
-<div class="grid_8 alpha feature-page">
+<div class="grid-8 alpha feature-page">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">
     <h1 class="salmon fpageheader">

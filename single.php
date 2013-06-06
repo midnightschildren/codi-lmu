@@ -7,7 +7,7 @@
  * @since Simon WP Framework 1.0
  */
 get_header(); ?>
-<div class="grid_8 alpha">
+<div class="grid-8 alpha">
   <?php get_template_part('loop', 'single'); ?>
 </div>
 <?php get_sidebar(); ?>

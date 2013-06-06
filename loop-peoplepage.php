@@ -17,10 +17,10 @@
     } 
   ?>
 
-  <div class="grid_8 pull-left bortop featured-home <?php echo $oddClass ?>">
+  <div class="grid-8 pull-left bortop featured-home <?php echo $oddClass ?>">
         
-      <div class="grid_8 alpha featured-posts">
-        <div class="grid_6 alpha featured-text pull-left">
+      <div class="grid-8 alpha featured-posts">
+        <div class="grid-6 alpha featured-text pull-left">
           <h6><?php echo my_entry_published_link(); ?></h6>
           <h1 class="altheader hspacer" id="post-<?php the_ID(); ?>">
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
@@ -44,12 +44,12 @@
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
               <?php endif; ?>
 
-          <div class="grid_6 alpha featured-text pull-left"><div class="lpotb tagsblock">
+          <div class="grid-6 alpha featured-text pull-left"><div class="lpotb tagsblock">
           <?php if( function_exists('ADDTOANY_SHARE_SAVE_KIT') ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
           <?php the_tags(); ?></div>
           </div>
         </div>
-        <div class="grid_2">
+        <div class="grid-2">
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('page-people'); ?></a>
         </div>
       </div>  

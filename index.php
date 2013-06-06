@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div class="alpha grid_8">
+<div class="alpha grid-8">
   <?php 
     // attempt to guess the loop type we want to use
     // post_type > category > default
