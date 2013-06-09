@@ -19,10 +19,10 @@
     } 
   ?>
 
-  <div class="grid-8 pull-left bortop featured-home <?php echo $oddClass ?>">
+  <div class="grid-12 pull-left bortop featured-home <?php echo $oddClass ?>">
         
-      <div class="grid-8 alpha featured-posts">
-        <div class="grid-2 alpha">
+      <div class="grid-12 alpha featured-posts">
+        <div class="grid-3 paddedspr alpha">
               <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('page-feature'); ?></a>
               <?php 
                 $ptype = get_post_type( $post->ID );
@@ -31,7 +31,7 @@
                 }
                ?> 
         </div>
-        <div class="grid-6 featured-text pull-left">
+        <div class="grid-9 featured-text pull-left">
           <h6><?php echo my_entry_published_link(); ?></h6>
 
           <h3 class="people_stitle">
@@ -68,9 +68,9 @@
           <?php
               $ptype = get_post_type( $post->ID );
                 if($ptype == videos){
-                echo '</div> <div class="grid_8 alpha">';  
+                echo '</div> <div class="grid-12 alpha video-container">';  
                 print_custom_field('videoiframe');
-                echo '</div> <div class="grid_6 alpha video-text pull-right">';
+                echo '</div> <div class="grid-9 alpha video-text pull-right">';
                 the_content();
                 }
                 else {

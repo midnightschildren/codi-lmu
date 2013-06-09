@@ -85,7 +85,32 @@ function registerstyles() {
 // Add Thumnail Support
 	add_theme_support( 'post-thumbnails' );
 	
+// Responsive Captions
 
+    
+function dap_responsive_img_caption_filter( $val, $attr, $content = null ) {
+    extract( shortcode_atts( array(
+        'id' => '',
+        'align' => '',
+        'width' => '',
+        'caption' => ''
+        ), $attr
+    ) );
+    
+    if ( 1 > (int) $width || empty( $caption ) )
+        return $val;
+ 
+    $new_caption = sprintf( '<div id="%1$s" class="wp-caption %2$s" style="max-width:100% !mportant;height:auto;width:%3$dpx;">%4$s<p class="wp-caption-text">%5$s</p></div>',
+        esc_attr( $id ),
+        esc_attr( $align ),
+        ( 10 + (int) $width ),
+        do_shortcode( $content ),
+        $caption
+    );
+    return $new_caption;
+}
+ 
+add_filter( 'img_caption_shortcode', 'dap_responsive_img_caption_filter', 10, 3 );
 	
 // Clean up the <head>
 	function removeHeadLinks() {

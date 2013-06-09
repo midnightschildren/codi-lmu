@@ -24,6 +24,18 @@
 
 <div id="footer_bottom"></div>
 <?php wp_footer(); ?>
-
+  <script language=javascript>
+$(document).ready(function(){
+    $('iframe').each(function(){
+          var url = $(this).attr("src");
+          var char = "?";
+          if(url.indexOf("?") != -1){
+                  var char = "&";
+           }
+         
+          $(this).attr("src",url+char+"wmode=transparent");
+    });
+});
+  </script>
 </body>
 </html>

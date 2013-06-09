@@ -7,7 +7,7 @@
  * @since Simon WP Framework 1.0
  */
 ?>
-<div id="sidebar" class="grid-4 omega">
+<div id="sidebar" class="grid-4 paddedsp">
   <div>
     <?php 
       $useDefaultSidebar = true;

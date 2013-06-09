@@ -17,10 +17,10 @@
     } 
   ?>
 
-  <div class="grid-8 pull-left featured-home <?php echo $oddClass ?>">
+  <div class="grid-12 pull-left featured-home <?php echo $oddClass ?>">
         
-      <div class="grid-8 alpha featured-header">
-        <div class="grid-6 alpha featured-text pull-right">
+      <div class="grid-12 alpha featured-header">
+        <div class="grid-9 alpha featured-text pull-right">
         <h6><?php echo my_entry_published_link(); ?></h6>
         <h3 class="feature_stitle"><a href="<?php echo home_url(); ?>/features/">Feature</a></h3>
         <h2 class="altheader white" id="post-<?php the_ID(); ?>">
@@ -31,7 +31,7 @@
   
   <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('home-feature'); ?></a>
       
-      <div class="grid-6 alpha pull-right featured-text">
+      <div class="grid-9 alpha pull-right featured-text">
 	      <?php the_excerpt(); ?> 
         <p class="readmore blue peoplespacer"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">Read More</a> ></p>
       </div>

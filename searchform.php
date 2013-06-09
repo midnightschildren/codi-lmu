@@ -12,7 +12,7 @@
     <table border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td class="searchbox" align="center" valign="middle"><input type="text" id="s" name="s" onfocus="if (this.value=='Search') this.value = ''" value="Search" /></td>
-        <td align="center" valign="middle"><input type="submit" value="" id="searchsubmit" /></td>
+        <td align="right" valign="middle"><input type="submit" value="" id="searchsubmit" /></td>
       </tr>
     </table>
   </div>

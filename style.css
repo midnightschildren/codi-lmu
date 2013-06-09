@@ -114,6 +114,27 @@ clear:both;
 max-width:940px;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.size-full {
+  width: 100%;
+  height: auto;
+}
+
 /* 
   Extra Strength Responsive Grids
   Author & copyright (c) 2013: John Polacek 
@@ -191,6 +212,14 @@ max-width:940px;
   padding: 0.5em;
 }
 
+.paddedsp{
+  padding-left: 1.53846154em;
+}
+
+.paddedspr{
+  padding-right: 1.53846154em;
+}
+
 .padded-left {
   padding-left: 0.5em;
 }
@@ -256,7 +285,7 @@ max-width:940px;
 
 /* For compatibility with Bootstrap (fixed), Foundation, etc. */
 .row {
-  margin: 0 -0.5em;
+  margin: 0em;
   width: auto;
   box-sizing: content-box;
   float: none;
@@ -760,7 +789,7 @@ content:"";
 }
 
 form {
-margin:0 0 18px;
+margin:0;
 }
 
 label,input,button,select,textarea {
@@ -997,7 +1026,7 @@ padding-left:160px;
 }
 
 table {
-max-width:100%;
+width:100%;
 background-color:transparent;
 border-collapse:collapse;
 border-spacing:0;
@@ -1340,9 +1369,13 @@ h2,h3,h4,h5,h6 {
 padding:0;
 }
 
+.logo_spacer_header {
+  margin-top: 2%;
+}
+
 #header h1 {
 font-weight:bolder;
-margin:33px 0 0;
+margin:0;
 padding:0;
 border-right:0 solid #ccc;
 float:left;
@@ -1476,8 +1509,9 @@ background-color:#ece9e7;
 border:0 solid #ccc;
 padding:0;
 padding-left:10px;
+padding-right:10px;
 margin:0;
-width:266px;
+width:100%;
 height:24px;
 line-height:24px;
 box-shadow:none;
@@ -1612,7 +1646,11 @@ margin-right:0;
 height:150px;
 padding-top:15px;
 position:fixed;
+right: 0;
+left: 40px;
 background-color:#fff;
+padding-right:40px;
+z-index: 9999;
 }
 
 #navigation ul {
@@ -1739,6 +1777,8 @@ padding-top:15px;
 
 .wp-post-image {
 margin-bottom:20px;
+width: 100%;
+height: auto;
 }
 
 p {
@@ -2016,29 +2056,32 @@ margin-top: 4px;
 #id_email {
 padding:0;
 height:22px;
-width:90%;
+width:95%;
 border-radius:0;
+float:left;
 box-shadow:none;
 -moz-transition:none;
 }
 
 #e2ma_signup_submit_button {
 height:24px;
-width:40%;
+width:35%;
 background:url(updates.png) 0 0 no-repeat;
 border:none;
 color:transparent;
 float:right;
 }
 
-.e2ma_signup_form_row {
-width:50%;
-float:right;
+.e2ma_signup_form_element {
+
+float: left;
+width: 65%;
+
 }
 
 #Loglines_logo {
-width:100%;
-padding-bottom: 24.91%;
+width:91%;
+padding-bottom: 22.6681%;
 height: 0;
 overflow:hidden;
 text-indent:-9999px;
@@ -2057,21 +2100,23 @@ background-position: 0 100%;
 }
 
 #LMUSofFilm {
-width:483px;
-height:31px;
+width:88%;
+padding-bottom: 5.72%;
+height:0;
 overflow:hidden;
 text-indent: -9999px;
 display:block;
 white-space:nowrap;
 background:url(SFTV_logo.png) 0 0 no-repeat;
+background-size:100%;
 }
 
 #LMUSofFilm:hover {
-background:url(SFTV_logo.png) 0 -31px no-repeat;
+background-position: 0 50%;
 }
 
 #LMUSofFilm:active {
-background:url(SFTV_logo.png) 0 -62px no-repeat;
+background-position: 0 100%;
 }
 
 #navigation {
@@ -2213,7 +2258,7 @@ border-top:10px solid #f82fff;
 }
 
 .featured-header {
-width:600px;
+
 background-color:#3286cd;
 padding-bottom:15px;
 padding-top:10px;
@@ -2228,12 +2273,10 @@ padding:0 0 .95em;
 }
 
 .featured-text {
-width:440px;
+
 }
 
 .video-text {
-width:440px;
-margin-right:20px;
 margin-top:15px;
 }
 
@@ -2278,7 +2321,7 @@ padding-top:20px;
 }
 
 .featured-home {
-width:600px;
+
 margin-right:20px;
 }
 
