@@ -9,7 +9,7 @@
 ?>
 </div>
 <div style="clear: both"></div>
-</div>
+
 <div id="footer">
     <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer1") ) : ?>
     <?php endif; ?>
@@ -22,7 +22,9 @@
 <div class="black"><a href="http://lmu.edu">&copy;<?php echo date("Y"); ?> Loyola Marymount University</a></div>
 </div>
 
-<div id="footer_bottom"></div>
+
+</div>
+<div id="footer_bottom" class="grid-12 container"></div>
 <?php wp_footer(); ?>
   <script language=javascript>
 $(document).ready(function(){

@@ -1710,16 +1710,6 @@ background:#FFF;
 border:none;
 }
 
-#footer {
-margin:0;
-padding:0;
-color:#848484;
-max-width:1060px;
-margin-right:auto;
-margin-left:auto;
-background:url(shadow_footer.png) 0 0 repeat-y;
-}
-
 .wp-caption-text {
 border:1px solid #ddd;
 text-align:center;
@@ -1923,20 +1913,17 @@ color:#a9a9a9;
 }
 
 #footer {
-margin:0;
-padding:20px 60px 28px;
-max-width:940px;
-height:94px;
-margin-right:auto;
-margin-left:auto;
-margin-top:80px;
+padding:20px 40px 28px;
+max-width:1060px;
 box-shadow:none;
 text-shadow:none;
-background:#77787b url(shadow_box.png) 0 0 repeat-y;
+background:#77787b;
 color:#fff;
 font-family:Helvetica, Arial, sans-serif;
 font-size:11px;
 line-height:14px;
+margin-left: -40px;
+margin-right: -40px;
 }
 
 #footer .widget_text {
@@ -2162,6 +2149,7 @@ padding-bottom:16px;
 .widget_twitter {
 margin-bottom:0;
 padding-bottom:0;
+overflow:hidden;
 }
 
 .text-5 h3 a {
