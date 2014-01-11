@@ -87,7 +87,7 @@ function registerstyles() {
 	
 // Responsive Captions
 
-    
+
 function dap_responsive_img_caption_filter( $val, $attr, $content = null ) {
     extract( shortcode_atts( array(
         'id' => '',
@@ -100,7 +100,7 @@ function dap_responsive_img_caption_filter( $val, $attr, $content = null ) {
     if ( 1 > (int) $width || empty( $caption ) )
         return $val;
  
-    $new_caption = sprintf( '<div id="%1$s" class="wp-caption %2$s" style="max-width:100% !mportant;height:auto;width:%3$dpx;">%4$s<p class="wp-caption-text">%5$s</p></div>',
+    $new_caption = sprintf( '<div id="%1$s" class="wp-caption %2$s" style="max-width:100% !mportant;height:auto;">%4$s<p class="wp-caption-text">%5$s</p></div>',
         esc_attr( $id ),
         esc_attr( $align ),
         ( 10 + (int) $width ),
@@ -357,7 +357,7 @@ add_action('admin_menu', 'remove_menus');
 	if ( function_exists('register_sidebar') )
 	register_sidebar(array(
 		'name' => 'Footer1',
-		'before_widget' => '<div class="grid_3 %2$s %1$s">',
+		'before_widget' => '<div class="grid-4 %2$s %1$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',

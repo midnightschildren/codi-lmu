@@ -7,7 +7,7 @@
  * @since Simon WP Framework 1.0
  */get_header(); ?>
 
-<div class="grid-8 alpha">
+<div class="grid-8 s-grid-12 alpha">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">
 
